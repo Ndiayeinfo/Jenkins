@@ -68,6 +68,8 @@ Dans Jenkins, créer un job Pipeline “Pipeline script from SCM” pointant ver
 
 ![Jenkins – build réussi](docs/screenshots/02-jenkins-build-success.png)
 - **[Capture]** Docker Hub – images publiées (backend + frontend)
+
+![Docker Hub – images publiées](docs/screenshots/03-dockerhub-images-published.png)
 - **[Capture]** Swagger (`/docs`) du backend
 - **[Capture]** UI du frontend (liste des employés)
 
