@@ -69,12 +69,14 @@ pipeline {
                     args '-u root -v /var/run/docker.sock:/var/run/docker.sock'
                 }
             }
+            environment {
+                // Désactiver BuildKit pour éviter l erreur "driver not connecting"
+                DOCKER_BUILDKIT = '0'
+            }
             steps {
                 withCredentials([usernamePassword(credentialsId: 'dockerhub-credentials', passwordVariable: 'DOCKER_HUB_PASSWORD', usernameVariable: 'DOCKER_HUB_USERNAME')]) {
                     sh '''
                         set -e
-                        # Désactiver BuildKit pour éviter l erreur "driver not connecting"
-                        export DOCKER_BUILDKIT=0
 
                         echo "Connexion à Docker Hub..."
                         echo "$DOCKER_HUB_PASSWORD" | docker login -u "$DOCKER_HUB_USERNAME" --password-stdin
