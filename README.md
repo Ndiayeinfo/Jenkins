@@ -62,6 +62,8 @@ Dans Jenkins, créer un job Pipeline “Pipeline script from SCM” pointant ver
 ## Captures d’écran à ajouter (pour le compte rendu)
 
 - **[Capture]** Jenkins – configuration du job (SCM + Jenkinsfile)
+
+![Jenkins – configuration du job](docs/screenshots/01-jenkins-job-config.png)
 - **[Capture]** Jenkins – build réussi (stages en vert)
 - **[Capture]** Docker Hub – images publiées (backend + frontend)
 - **[Capture]** Swagger (`/docs`) du backend
