@@ -75,3 +75,5 @@ Dans Jenkins, créer un job Pipeline “Pipeline script from SCM” pointant ver
 ![Swagger du backend](docs/screenshots/04-backend-swagger-docs.png)
 - **[Capture]** UI du frontend (liste des employés)
 
+![UI du frontend – liste des employés](docs/screenshots/05-frontend-ui-employees.png)
+
